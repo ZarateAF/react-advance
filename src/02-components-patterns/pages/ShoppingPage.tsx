@@ -20,13 +20,30 @@ export const ShoppingPage = () => {
                 <ProductCard product={product} className="bg-dark">  
                     <ProductCard.Image className="custom-image" />
                     <ProductCard.Title className="text-white" />
-                    <ProductButtons className="custom-buttons" />
+                    <ProductButtons className="custom-buttons"/>
                 </ProductCard>
 
                 <ProductCard product={product} className="bg-dark"> 
-                    <ProductImage img={'./coffee-mug.png'} className="custom-image" />
+                    <ProductImage img={'./coffee-mug.png'} className="custom-image"  style={{
+                        boxShadow: '10px 10px 10px rgba(0,0,0,0.2)'
+                    }} />
                     <ProductTitle title='TEST' className="text-white" />
                     <ProductButtons className="custom-buttons" />
+                </ProductCard>
+                
+                <ProductCard product={product} className="bg-dark" style={{
+                    backgroundColor: '#70D1F8'
+                }}> 
+                    <ProductImage img={'./coffee-mug.png'} className="custom-image" style={{
+                        boxShadow: '10px 10px 10px rgba(0,0,0,0.2)'
+                    }} />
+                    <ProductTitle title='TEST' className="text-white" style={{
+                        fontWeight: 'bold'
+                    }}/>
+                    <ProductButtons className="custom-buttons"  style={{
+                        display: 'flex',
+                        justifyContent: 'end'
+                    }}/>
                 </ProductCard>
             </div>
         </div>
